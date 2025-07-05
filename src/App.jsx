@@ -18,9 +18,15 @@ import About_us from './User_Components/About_us'
 import Contact_us from './User_Components/Contact_us'
 import UCoursesInfo from './User_Components/UCoursesInfo'
 import ULesson from './User_Components/ULesson'
+import GuestLayout from './Layout/GuestLayout'
 
 
-const routes=createBrowserRouter([{
+const routes=createBrowserRouter([
+  {
+    path:'/',
+    element:<GuestLayout/>
+  },
+  {
   path:'admin',
   element:<Adminlayout/>,
   children:[
