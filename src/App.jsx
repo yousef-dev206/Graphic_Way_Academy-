@@ -21,7 +21,12 @@ import ULesson from './User_Components/ULesson'
 import GuestLayout from './Layout/GuestLayout'
 
 
-const routes=createBrowserRouter([{
+const routes=createBrowserRouter([
+  {
+    path:'/',
+    element:<GuestLayout/>,
+  },
+  {
   path:'admin',
   element:<Adminlayout/>,
   children:[
