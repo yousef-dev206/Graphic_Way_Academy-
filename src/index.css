@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* فوق كل حاجة */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Judson', serif;
+}
+
+.nav-link:hover {
+  color: white !important;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px white,
+    0 0 15px white,
+    0 0 20px white;
+}
+
+.circle-icon:hover,
+.circle-icon:focus,
+.circle-icon:active {
+  filter: drop-shadow(0 0 8px #9C34C2); 
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+section {
+  font-family: 'Judson', serif;
+}
+
+
+
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  font-family: 'Judson', serif;
+}
+
+.hero-box {
+  position: relative;
+  width: 95%;
+  max-width: 900px;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #261754;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #261754;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+}
+
+.hero-button:hover {
+  background-color: #fff;
+  color: #261754;
+  box-shadow: 0 0 10px rgba(38, 23, 84, 0.6);
+  text-decoration: none;
+}
+
+
+@media (min-width: 1600px) {
+  .hero-box {
+    max-width: 1200px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-box {
+    aspect-ratio: 16 / 12;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+
+.apps{
+    font-family: 'Judson', serif;
+}
+.font{
+     font-family: 'Judson', serif;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  font-family: 'Judson', serif;
+}
+
+
+.linkcourses{
+     font-family: 'Judson', serif;
+}
+.linkcourses:hover {
+  color:"#441654" !important; 
+  text-shadow: 
+    0 0 5px#15d4de,
+    0 0 10px #15d4de,
+    0 0 15px #15d4de,
+    0 0 20px #15d4de;
+}
+
+
+.card {
+  width: 100%;
+  max-width: 260px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px; 
+  border-bottom: 1px solid #eee; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #261754;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #020202;
+}
+
+.card .btn {
+  background-color: #4b1f8e;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.reviews{
+  font-family: 'Judson', serif;
+}
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Judson', serif;
+}
+
+.review-card {
+  width: 100%;
+  max-width: 28rem;
+  height: auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-user img {
+  width: 30px;
+  height: 30px;
+}
+
+.review-user h5 {
+  margin: 0;
+  color: #4E236A;
+  font-size: 1.1rem;
+}
+
+.card{
+   font-family: 'Judson', serif;
+}
+
+.titlecourse{
+  font-family: 'Judson', serif;
+}
+
+.button:hover,
+.button:focus{
+  filter: drop-shadow(0 0 8px #9C34C2); 
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+.listfont
+{font-family: 'Judson', serif;}
+
+.info{
+  font-family: 'Judson', serif;
+    font-size: 1.7rem;
+
+}
+
+.main-footer {
+  margin-top: 2rem;
+  background-color: #4E236A;
+  color: white;
+  padding: 3rem 1rem 1rem;
+  font-family: 'Judson', serif;
+}
+
+
+
+.social-icons:hover,
+.social-icons:focus,
+.social-icons:active {
+  filter: drop-shadow(0 0 8px #9C34C2); 
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid #ab98c6;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.footerlinks:hover {
+  color: #877baa!important;
+  text-shadow:
+    0 0 5px ,
+    0 0 10px #877baa,
+    0 0 15px #877baa,
+    0 0 20px #877baa;
+}
+
+/* Contact us page */
+.labels{
+  font-family: 'Judson', serif;
+  color: #4E236A;
+  
+}
+form {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.labels {
+  font-family: 'Judson', serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #4E236A;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #261754;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  font-family: 'Judson', serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-bottom-color: #4E236A;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 40px;
+}
+
+input[type="submit"] {
+  background-color: #4E236A;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: 'Judson', serif;
+  margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: #4E236A;
+  box-shadow: 0 0 10px rgba(78, 35, 106, 0.5);
+}
+
+
+/* About us page */
+.about-section {
+  font-family: 'Judson', serif;
+  background-color: #ffffff;
+  color: #261754;
+  padding: 4rem 2rem;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.3rem;
+  color: #4E236A;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #4e3e72;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.about-content li {
+  background: #e7dcf7;
+  padding: 1rem;
+  margin: 0.7rem auto;
+  border-radius: 12px;
+  font-size: 1rem;
+  max-width: 450px;
+}
