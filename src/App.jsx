@@ -20,7 +20,7 @@ import UCoursesInfo from './User_Components/UCoursesInfo'
 import ULesson from './User_Components/ULesson'
 
 
-const routes=createBrowserRouter([{
+const routes = createBrowserRouter([{
   path:'admin',
   element:<Adminlayout/>,
   children:[
